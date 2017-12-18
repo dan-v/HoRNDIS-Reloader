@@ -8,7 +8,7 @@ It is painful to manually unload/load kext every time you plugin your phone for 
 
 ### HOW
 
-Edit the included plist file and add your phone's vendor and product id to it. You can add multiple device ids. Also change the Path to where your `HoRNDIS-Reloader` binary is located.
+Edit the included plist file and add your phone's vendor and product id to it in the form <vendor-id>:<product-id>. You can add multiple device ids. Also change the Path to where your `HoRNDIS-Reloader` binary is located.
 
 ```xml
 <array>

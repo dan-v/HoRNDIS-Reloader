@@ -116,7 +116,7 @@ func AddDeviceMatch(vendorID, productID int) {
 			unsafe.Pointer(numberRef))
 	}
 
-	C.CFRelease(numberRef)
+	C.CFRelease(C.CFTypeRef(numberRef))
 
 	numberRef = C.CFNumberCreate(C.kCFAllocatorDefault, C.kCFNumberSInt32Type,
 		unsafe.Pointer(&productID))
@@ -127,7 +127,7 @@ func AddDeviceMatch(vendorID, productID int) {
 			unsafe.Pointer(numberRef))
 	}
 
-	C.CFRelease(numberRef)
+	C.CFRelease(C.CFTypeRef(numberRef))
 
 	numberRef = nil
 

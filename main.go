@@ -10,7 +10,7 @@ import (
 )
 import "strconv"
 
-const Kext = "/System/Library/Extensions/HoRNDIS.kext"
+const Kext = "/Library/Extensions/HoRNDIS.kext"
 
 var c = make(chan int, 10)
 
